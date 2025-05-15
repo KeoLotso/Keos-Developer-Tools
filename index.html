@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDT - Unity Developer Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="KDT.png"KDT Logo" class="logo">
+            </div>
+            <div class="header-content">
+                <h1>KDT (Keos Developer Tools)</h1>
+                <p class="subtitle">Enhance your Unity development workflow with powerful features</p>
+                <button id="download-btn" class="download-btn">Download KDT <span id="version">V1</span>.unitypackage</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="features">
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>AnyTag</h2>
+                    <p>AnyTag is a type of string that shows all of the Tags currently available in your project. The usage is just like a string, making it incredibly simple to work with Tags in your Unity project without memorizing them all.</p>
+                    <p>This powerful feature allows you to quickly select from existing tags and ensures you're always referencing valid tags in your code.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/AnyTag.png" alt="AnyTag Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>BoxGroup</h2>
+                    <p>
+                        <strong>BoxGroup</strong> lets you visually group related fields in the Unity Inspector inside a labeled box. Use the <code>[BoxGroup("Group Name")]</code> attribute to organize your fields, making complex scripts easier to navigate and understand.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/BoxGroup.png" alt="BoxGroup Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>Colorize</h2>
+                    <p>
+                        <strong>Colorize</strong> highlights fields in the Inspector with a background color. Use <code>[Colorize("colorNameOrHex")]</code> to quickly draw attention to important fields or visually categorize them. Supports color names like "red", "green", or hex codes.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/Colorize.png" alt="Colorize Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>ColorPreview</h2>
+                    <p>
+                        <strong>ColorPreview</strong> displays a color swatch next to color fields in the Inspector. Use <code>[ColorPreview]</code> to instantly see the color value, making it easier to pick and compare colors visually.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/ColorPreview.png" alt="ColorPreview Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>DebugOnly</h2>
+                    <p>
+                        <strong>DebugOnly</strong> disables fields in the Inspector, making them read-only. Use <code>[DebugOnly]</code> to prevent accidental changes during play mode or debugging, ensuring critical values remain unchanged.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/DebugOnly.png" alt="DebugOnly Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>DropDown</h2>
+                    <p>
+                        <strong>DropDown</strong> turns a string field into a dropdown menu in the Inspector. Use <code>[Dropdown("optionsFieldName")]</code> to select from predefined options, reducing errors and speeding up data entry.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/DropDown.png" alt="DropDown Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>EditorOnly</h2>
+                    <p>
+                        <strong>EditorOnly</strong> shows fields only in the Unity Editor and hides them during play mode. Use <code>[EditorOnly]</code> for fields that are only relevant during editing, keeping your Inspector clean during runtime.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/EditorOnly.png" alt="EditorOnly Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>Foldout</h2>
+                    <p>
+                        <strong>Foldout</strong> groups fields under a collapsible header in the Inspector. Use <code>[Foldout("Group Name")]</code> to organize fields and reduce clutter, making large scripts easier to manage.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/Foldout.png" alt="Foldout Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>HorozontalGroup</h2>
+                    <p>
+                        <strong>HorizontalGroup</strong> arranges multiple fields on the same line in the Inspector. Use <code>[HorizontalGroup]</code> to save space and group related fields together for a more compact layout.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/HorozontalGroup.png" alt="HorizontalGroup Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>IfNullWarning</h2>
+                    <p>
+                        <strong>IfNullWarning</strong> displays a warning message in the Inspector if a field is left empty or null. Use <code>[IfNullWarning("Message")]</code> to remind yourself or your team to assign important references.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/IfNullWarning.png" alt="IfNullWarning Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>Link</h2>
+                    <p>
+                        <strong>Link</strong> creates a clickable link in the Inspector. Use <code>[Link("url", "Display Text")]</code> to quickly access documentation, web pages, or Unity menu items directly from your scripts.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/Link.png" alt="Link Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>QuickButton</h2>
+                    <p>
+                        <strong>QuickButton</strong> adds a button to the Inspector that calls a method when clicked. Use <code>[QuickButton("Button Name")]</code> above a method to quickly trigger actions for testing or debugging.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/QuickButton.png" alt="QuickButton Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>RangeWithSteps</h2>
+                    <p>
+                        <strong>RangeWithSteps</strong> creates a slider in the Inspector with custom step increments. Use <code>[RangeWithSteps(min, max, step)]</code> to precisely control numeric values and prevent invalid input.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/RangeWithSteps.png" alt="RangeWithSteps Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>SceneName</h2>
+                    <p>
+                        <strong>SceneName</strong> turns a string field into a dropdown of all scenes in your build settings. Use <code>[SceneName]</code> to avoid typos and ensure you always reference valid scene names.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/SceneName.png" alt="SceneName Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>ShowCondition</h2>
+                    <p>
+                        <strong>ShowCondition</strong> (ShowState) displays a field only if a specified boolean field is true. Use <code>[ShowState("boolFieldName")]</code> to conditionally show fields in the Inspector based on other values.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/ShowCondition.png" alt="ShowCondition Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>ShowWhenEnum</h2>
+                    <p>
+                        <strong>ShowWhenEnum</strong> (ShowWhenEnumIs) displays a field only when an enum field matches a specific value. Use <code>[ShowWhenEnumIs("enumFieldName", EnumValue)]</code> to show fields conditionally based on enum selection.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/ShowWhenEnum.png" alt="ShowWhenEnum Example" class="code-image enlargeable">
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-text">
+                    <h2>Warning</h2>
+                    <p>
+                        <strong>Warning</strong> displays a custom warning, info, or error message above a field in the Inspector. Use <code>[Warning("Message", CustomMessageType.Warning)]</code> to communicate important information to users of your scripts.
+                    </p>
+                </div>
+                <div class="feature-image">
+                    <img src="Recourses/Warning.png" alt="Warning Example" class="code-image enlargeable">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> KDT Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.85); justify-content: center; align-items: center; z-index: 1000;">
+        <span id="lightbox-close" style="position: absolute; top: 24px; right: 48px; color: #fff; font-size: 3rem; font-weight: bold; cursor: pointer; user-select: none; z-index: 1001;">&times;</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image" style="max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 0 24px #000;">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.enlargeable').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', function() {
+                document.getElementById('lightbox-img').src = this.src;
+                document.getElementById('lightbox-overlay').style.display = 'flex';
+            });
+        });
+        document.getElementById('lightbox-close').onclick = function() {
+            document.getElementById('lightbox-overlay').style.display = 'none';
+            document.getElementById('lightbox-img').src = '';
+        };
+        document.getElementById('lightbox-overlay').onclick = function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+                document.getElementById('lightbox-img').src = '';
+            }
+        };
+    </script>
+</body>
+</html>
