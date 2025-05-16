@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (downloadBtn) {
         downloadBtn.addEventListener('click', function() {
             const link = document.createElement('a');
-            link.href = 'KDT_V1.unitypackage';
+            link.href = 'https://github.com/KeoLotso/Keos-Developer-Tools/raw/main/KDT%20V1.unitypackage';
             link.download = `KDT_V${version}.unitypackage`;
             document.body.appendChild(link);
             link.click();
